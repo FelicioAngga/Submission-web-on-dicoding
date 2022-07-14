@@ -1,0 +1,372 @@
+*{
+    box-sizing: border-box;
+}
+html, body{
+    margin: 0;
+    height: 100%;
+    background-color: #393E46;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+}
+
+header{
+    margin-top: 0;
+    display: inline;
+}
+nav{
+    background-color: #171717;
+    top: 0;
+    position: sticky;
+    z-index: 10;
+}
+header nav ul{
+    margin-top: -67px;
+    margin-bottom: 0px;
+    padding: 20px;
+    margin-left: 3%;
+}
+a{
+    text-decoration: none;
+    color: inherit;
+}
+header nav ul li, .dropdown{
+    list-style: none;
+    display: inline;
+    color: #EDEDED;
+    font-size: 20px;
+    font-weight: bold;
+    margin-right: 3%;
+    cursor: pointer;
+}
+
+header nav ul li a:hover, .dropdown:hover{
+    text-shadow: 0 0 12px black;
+}
+
+.dropdown{
+    background-color: #171717;
+    border: none;
+    position: relative;
+}
+.dropdown-content{
+    background-color: #171717;
+    margin-left: -12px;
+    text-shadow: none;
+    font-weight: 400;
+    padding-top: 20px;
+    text-align: left;
+    min-width: 150px;
+    position: absolute;
+    z-index: 1;
+    display: none;
+}
+.dropdown-content > a:hover{
+    background-color: #212121;
+    text-shadow: none;
+}
+
+.dropdown-content > a{
+    display: block;
+    padding: 10px 14px;
+    font-size: 17px;
+}
+
+.jumboTron img{
+    margin-top: 67px;
+    max-height: 800px;
+    width: 100%;
+    object-position: bottom;
+    object-fit: cover;
+    opacity: 0.5;
+    animation: fadeIn ease 1.4s;
+}
+.jumboTron{
+    position: relative;
+}
+
+.slogan{
+    position: absolute;
+    color: #fff;
+    margin-top: 0;
+    opacity: 1;
+}
+.desc{
+    margin-top: 3%;
+    margin-bottom: 20px;
+}
+.synop{
+    padding-right: 10px;
+    width: 95%;
+    margin-top: 5%;
+    color: #EDEDED;
+}
+
+article h2{
+    top: 40%;
+    left: 5%;
+    animation: slideIn ease-in-out 1.4s;
+}
+section p{
+    top: 50%;
+    left: 5%;
+    animation: slideIn ease-in-out 1.4s;
+}
+
+.sideBar{
+    width: 100%;
+    height: 100%;
+    display: none;
+    z-index: 100;
+    animation: sideBarSlideIn ease-in-out 0.5s;
+    animation-play-state: paused;
+    background-color: #171717;
+    position: fixed;
+}
+
+.sideBar ul{
+    color: #EDEDED;
+    list-style: none;
+    text-align: center;
+    margin-top: 0;
+    padding-left: 0;
+}
+
+.sideBar ul li{
+    padding-top: 50px;
+}
+
+.burger{
+    width: 50px;
+    height: 50px;
+    display: none;
+    cursor: pointer;
+}
+
+h1{
+    color: #EDEDED;
+    text-align: center;
+    padding-top: 20px;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.container{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.card{
+    width: 200px;
+    height: 300px;
+    margin: 30px;
+    border-radius: 12px;
+    background-position: center;
+    background-size: cover;
+    transition: transform .3s;
+    box-shadow: 0 5px 20px 3px rgba(0, 0, 0, 0.6);
+}
+.foodCard{
+    width: 250px;
+    height: 250px;
+    margin: 30px;
+    border-radius: 12px;
+    background-position: center;
+    background-size: cover;
+    transition: transform .3s;
+    box-shadow: 0 5px 20px 3px rgba(0, 0, 0, 0.6);
+}
+.doctor{
+    background-image: url(doctor.jpg);
+}
+.iron{
+    background-image: url(ironman.jpg);
+}
+.kkn{
+    background-image: url(kkn.jpg);
+}
+.merantau{
+    background-image: url(merantau.jpg);
+}
+.theVeil{
+    background-image: url(theVeil.jpg);
+}
+.boneka{
+    background-image: url(boneka.jpg);
+}
+.potato{
+    background-image: url(frenchFries.jpg);
+}
+.popcorn{
+    background-image: url(popcorn.jpg);
+}
+.hotdog{
+    background-image: url(hotdog.jfif);
+}
+.javachip{
+    background-image: url(javaChip.webp);
+}
+.milo{
+    background-image: url(milo.jpg);
+}
+.iceTea{
+    background-image: url(iceTea.jfif);
+}
+.card:hover, .foodCard:hover{
+    transform: scale(1.05);
+}
+
+.snack, .drink{
+    background-color: #393E46;
+}
+.checkPrice{
+    margin-bottom: 0;
+    padding-bottom: 30px;
+    text-align: center;
+    font-weight: 600;
+    color: #EDEDED;
+}
+.foodDesc{
+    text-align: center;
+    width: 100%;
+    background-color: #DA0037;
+    opacity: 0.8;
+    border-radius: 12px 12px 0 0;
+    font-weight: 600;
+    color: #EDEDED;
+}
+
+.profile-container{
+    width: 350px;
+    height: 450px;
+    background-color: #130f40;
+    background-image: linear-gradient(180deg, #130f40 0%, #000000 30%);
+    border-radius: 12px;
+    margin: 15px auto;
+    padding: 30px;
+}
+.profile{
+    border-radius: 50%;
+    width: 120px;
+    height: 120px;
+    display: block;
+    margin: 0 auto 0 auto;
+}
+.profile-label{
+    font-weight: 600;
+}
+aside ul li{
+    margin-top: 10px;
+    color: #EDEDED;
+    list-style: none;
+}
+footer{
+    background-color: #171717;
+    width: 100%;
+    height: 50px;
+}
+footer p{
+    color: #EDEDED;
+    text-align: center;
+    padding-top: 12px;   
+}
+
+@media screen and (max-height:800px) {
+    .jumboTron img{
+        max-height: 500px;
+    }
+}
+
+@media screen and (max-width:600px) {
+    header nav ul{
+        display: none;
+        width: 100%;
+        text-align: center;
+    }
+    .jumboTron img{
+        margin-top: 0;
+        animation: fadeInMobile ease-in-out 0.8s;
+    }
+    .burger{
+        display: block;
+        padding: 10px;
+    }
+    .jumboTron section h2{
+        top: 30%;
+        left: 5%;
+        font-size: 16px;
+    }
+    .jumboTron section p{
+        top: 40%;
+        left: 5%;
+        font-size: 12px;
+    }
+    .jumboTron section .desc{
+        top: 45%;
+    }
+    .jumboTron section .synop{
+        top: 50%;
+    }
+}
+
+@keyframes sideBarSlideIn{
+    0%{
+        width: 0%;
+        opacity: 0;
+    }
+    100%{
+        width: 100%;
+        opacity: 1;
+    }
+}
+@keyframes sideBarSlideOut{
+    0%{
+        width: 100%;
+        opacity: 1;
+    }
+    100%{
+        width: 0%;
+        opacity: 0;
+    }
+}
+@keyframes fadeIn{
+    0%{
+        opacity: 0.0;
+        margin-top: -100px;
+    }
+    100%{
+        opacity: 0.5;
+        margin-top: 67px;
+    }
+}
+@keyframes fadeInMobile{
+    0%{
+        opacity: 0.0;
+        margin-top: -150px;
+    }
+    100%{
+        opacity: 0.5;
+        margin-top: 0;
+    }
+}
+@keyframes fadeOut{
+    0%{
+        opacity: 0.6;
+        margin-top: 0px;
+    }
+    100%{
+        opacity: 0;
+        margin-top: -100px;
+    }
+}
+@keyframes slideIn{
+    0%{
+        left: -20px;
+        opacity: 0;
+    }
+    100%{
+        left: 5%;
+        opacity: 1;
+    }
+}

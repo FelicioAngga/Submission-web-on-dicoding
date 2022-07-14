@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/style.css">
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <nav id="nav">
+            <img src="assets/burger.svg" alt="burger" class="burger" id="burger">
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#movies">Movies</a></li>
+                <li id="container-dropdown">
+                    <button class="dropdown" id="dropdown">Food
+                        <div class="dropdown-content">
+                            <a href="#snack">Snack</a>
+                            <a href="#drink">Drinks</a>
+                        </div>
+                    </button>
+                </li>
+            </ul>
+        </nav>
+        <div class="sideBar" id="sideBar">
+            <ul>
+                <li><a href="#home" class="sideBarList">Home</a></li>
+                <li><a href="#movies" class="sideBarList">Movies</a></li>
+                <li><a href="#snack" class="sideBarList">Snack</a></li>
+                <li><a href="#drink" class="sideBarList">Drinks</a></li>
+            </ul>
+        </div>
+    </header>
+    <main>
+        <article id="home">
+            <div id="jumboTron" class="jumboTron">
+                <img src="assets/doctorStrange.jpg" alt="doctorStrange">
+                <section>
+                    <h2 class="slogan">Get Your Ticket Now!</h2>
+                    <p class="slogan">Doctor Strange 2 has out now, Enjoy it with your family</p>
+                    <p class="slogan desc">Description</p>
+                    <p class="slogan synop">Dr Stephen Strange casts a forbidden spell that<br>opens a portal to the multiverse.<br>
+                    However, a threat emerges that may be too big<br>for his team to handle.</p>
+                </section>
+            </div>
+        </article>
+
+        <article class="movies" id="movies">
+            <h1>AIRING MOVIES</h1>
+            <div class="container">
+                <div class="card doctor"></div>
+                <div class="card iron"></div>
+                <div class="card kkn"></div>
+                <div class="card merantau"></div>
+                <div class="card theVeil"></div>
+                <div class="card boneka"></div>
+            </div>
+        </article>
+
+        <article id="snack" class="snack">
+            <h1>SNACKS</h1>
+            <section>
+                <div class="container">
+                    <div class="foodCard potato">
+                        <div class="foodDesc">French Fries With Sausage</div>
+                    </div>
+                    <div class="foodCard popcorn">
+                        <div class="foodDesc">Popcorn</div>
+                    </div>
+                    <div class="foodCard hotdog">
+                        <div class="foodDesc">Hotdog</div>
+                    </div>
+                </div>
+                <p class="checkPrice">Check the price directly from the outlet</p>
+            </section>
+        </article>
+
+        <article id="drink" class="drink">
+            <h1>DRINKS</h1>
+            <section>
+                <div class="container">
+                    <div class="foodCard javachip">
+                        <div class="foodDesc">Java Chip</div>
+                    </div>
+                    <div class="foodCard milo">
+                        <div class="foodDesc">Milo</div>
+                    </div>
+                    <div class="foodCard iceTea">
+                        <div class="foodDesc">Iced Tea</div>
+                    </div>
+                </div>
+                <p class="checkPrice">Check the price directly from the outlet</p>
+            </section>
+        </article>
+
+    </main>
+    <aside>
+        <div class="profile-container">
+            <img src="assets/Felicio.jpg" alt="profilePic" class="profile">
+            <ul>
+                <li class="profile-label">Name:</li>
+                <li>Felicio Angga</li>
+                <li class="profile-label">Gender:</li>
+                <li>Male</li>
+                <li class="profile-label">Email:</li>
+                <li>felicioangga004@gmail.com</li>
+            </ul>
+        </div>
+    </aside>
+
+    <footer>
+        <p>Copyright 2022 by Felicio Angga</p>
+    </footer>
+    <script src="assets/script.js"></script>
+</body>
+</html>
